@@ -28,7 +28,7 @@ void TensorFlowInference::run()
      // Run and fetch v
      TF_CHECK_OK(session.Run({v}, &outputs));
      // Expect outputs[0] == [19; -3]
-     LOG(INFO) << outputs[0].matrix<float>();
+     LOG(INFO) << "Test result output: " << outputs[0].matrix<float>();
 }
 
 
